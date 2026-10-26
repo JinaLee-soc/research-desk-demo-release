@@ -6,7 +6,7 @@ Research Desk combines a **paper progress tracker**, project notes, deadlines an
 
 This repository is an **English, offline macOS demo**. It includes eight fictional papers, five fictional deadlines and synthetic work sessions. You can explore and edit the demo without connecting a research account or supplying an API key.
 
-**Live calendar, literature-wiki and LLM integrations are not included.** Momo uses prepared replies. Calendar views use generated records. The connected workflows below describe possible extensions. You cannot enable these integrations in this release.
+**Use a coding agent to connect Research Desk to your own calendar, literature-note wiki and LLM.** The demo starts with prepared Momo replies and generated calendar records. Ask your agent to replace these demo components with connections to your preferred tools. The workflows below suggest what to build.
 
 ![Research Office with one owner and CC0 furniture](docs/office.png)
 
@@ -22,7 +22,15 @@ Research Desk shows each paper's current stage and the researcher's next task. T
 
 The office has one owner character and two work areas. Recorded progress unlocks furniture. Momo appears in the assistant area. The office provides access to project and literature workflows. The pipeline provides a direct overview.
 
-## How connected tools could work together
+## Connect your tools with a coding agent
+
+Give your coding agent this repository and describe the tools you want to connect. Start with one integration and test it with sample data. Keep credentials outside the repository. Review account permissions before using real data.
+
+For example:
+
+> Connect Research Desk to my calendar provider. Replace the simulated calendar data with my selected calendars. Add deadline creation, updates and reminders. Keep credentials outside Git. Test with a sample event before using real deadlines.
+
+> Connect Research Desk to my wiki and preferred LLM provider. Let me record paper progress and update task status through the assistant. Keep the demo mode available. Explain the required setup and permissions.
 
 The tracker supplies **project state**. A literature-note wiki supplies **research context**. A calendar supplies **time constraints**. A personal AI assistant could use those inputs to propose a concrete next action. Each source answers a different question.
 
@@ -62,7 +70,7 @@ For example, you could send:
 
 Reminders could help you notice approaching deadlines without checking the app each day. A Monday briefing could bring the week's deadlines together in one message.
 
-These are possible connected workflows, not built-in integrations in this release. They require a messaging connection, app and calendar write access, and scheduled notifications. The assistant would need to resolve unclear dates and time zones before adding entries. Updates should change existing entries rather than create duplicates.
+Ask your coding agent to implement these workflows with your preferred services. They require a messaging connection, app and calendar write access, and scheduled notifications. The assistant would need to resolve unclear dates and time zones before adding entries. Updates should change existing entries rather than create duplicates.
 
 **In this demo:** you can track fictional deadlines in the app. Momo's replies are simulated, and confirmation can save a reminder to demo data. The demo does not receive text messages, write to a real calendar or send Monday briefings.
 
