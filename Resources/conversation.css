@@ -1,0 +1,39 @@
+/* The dock occupies its own layout row: it never covers the progress matrix. */
+body.desk-with-chat{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+.desk-with-chat #app{flex:1;min-height:0;overflow:auto;scrollbar-gutter:stable}
+#conversation{flex:none;padding:0 24px 12px;background:var(--bg)}
+.chat-console{max-width:1500px;margin:auto;border:1px solid var(--line);background:var(--paper);border-radius:2px;box-shadow:none;overflow:hidden}
+.chat-composer{display:flex;align-items:center;gap:13px;padding:7px 15px 0}
+.chat-pet{width:48px;height:52px;flex:none}
+.chat-input-wrap{flex:1;min-width:0;padding:6px 0}
+.chat-input-wrap label{display:block;font-size:10px;color:var(--accent);margin-bottom:3px}
+#chat-input{display:block;min-height:27px;max-height:88px;height:27px;resize:none;border:0;background:transparent;padding:3px 0;width:100%;font-size:13px;line-height:21px;overflow-y:auto;border-radius:0}
+#chat-input::placeholder{color:var(--muted)}
+.chat-send{width:33px;height:33px;padding:0;border-radius:2px;background:var(--accent);color:white;font-size:24px;line-height:1;flex:none}
+.chat-toggle{white-space:nowrap;font-size:11px;color:var(--muted);margin-left:5px}
+.chat-bottom{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:2px 18px 0 77px}
+.chat-shortcuts{display:flex;gap:8px;flex-wrap:wrap}
+.chat-shortcuts button{font-size:10px;padding:3px 8px;border:1px solid var(--line);border-radius:2px;color:var(--muted)}
+.chat-privacy{font-size:10px;color:var(--muted)}
+.chat-status{font-size:10px;color:var(--muted);padding:5px 18px 7px 77px}
+.chat-history{border-bottom:1px solid var(--line);background:var(--paper)}
+.chat-history-heading{display:flex;align-items:center;justify-content:space-between;padding:8px 18px 0;font-size:10px;color:var(--accent)}
+.chat-history-heading button{font-size:10px;color:var(--muted);padding:3px 0}
+.chat-log{max-height:28vh;min-height:35px;overflow:auto;padding:7px 20px 13px;scrollbar-gutter:stable}
+.chat-message{display:grid;grid-template-columns:72px minmax(0,1fr);gap:5px 10px;padding:8px 0;font-size:12px;line-height:1.65;overflow-wrap:anywhere}
+.chat-message+.chat-message{border-top:1px solid var(--line)}
+.chat-speaker{font-size:10px;color:var(--accent);padding-top:2px}
+.chat-user .chat-speaker{color:var(--muted)}
+.chat-message>p{white-space:pre-wrap}
+.chat-sources{grid-column:2;display:flex;gap:6px;flex-wrap:wrap;font-size:10px;color:var(--muted)}
+.chat-sources span{border:1px solid var(--line);border-radius:1px;padding:1px 5px;background:var(--surface)}
+.chat-proposal{grid-column:2;border-left:2px solid var(--accent);background:var(--surface);padding:10px 12px;margin-top:4px}
+.chat-proposal-title{font-size:11px;color:var(--accent);margin-bottom:5px}
+.chat-proposal p{white-space:pre-wrap;margin-top:5px}
+.chat-proposal p span{display:block;font-size:10px;color:var(--muted)}
+.chat-proposal small{display:block;color:var(--muted);font-size:10px;margin-top:7px}
+.chat-proposal-actions{display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap;font-size:11px}
+.chat-proposal-actions button{font-size:11px;padding:5px 8px}
+.chat-empty{font-size:12px;color:var(--muted);padding:8px 0}
+@media(max-width:900px){#conversation{padding:0 14px 9px}.chat-privacy{display:none}.chat-composer{gap:9px}.chat-status{padding-left:72px}.chat-toggle{font-size:10px}.chat-bottom{padding-left:72px}}
+@media(max-height:700px){.chat-log{max-height:24vh}.chat-status{padding-block:3px}.chat-pet{width:40px;height:44px}.chat-composer{padding-top:2px}}

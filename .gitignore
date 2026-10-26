@@ -1,0 +1,7 @@
+.build/
+dist/
+__pycache__/
+verification/
+Demo Data/
+*.app/
+.DS_Store

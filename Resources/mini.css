@@ -1,0 +1,10 @@
+/* Keep the assistant visible alongside the initial two deadline notes. */
+.mini { padding:12px 16px; }
+.mini .metrics { margin:9px 0; padding:9px 0; }
+.mini .title { margin:9px 0 3px; }
+.mini-bar { margin-top:10px; }
+.mini .spaced { margin-top:7px; }
+.mini .deadline-list { margin-top:12px; }
+.mini .deadline-note { margin-top:9px; padding-top:8px; }
+.mini .pet-line { margin-top:10px; padding-top:7px; }
+.mini .foot { margin-top:9px; padding-top:7px; }

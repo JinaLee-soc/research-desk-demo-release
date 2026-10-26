@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges">
+<!-- 浇水壶 — Cozy Pixel 新风格 -->
+<!-- 轮廓 -->
+<path fill="#1a1c2c" d="M10 1h3v1h-3zM9 2h1v1h-1zM13 2h1v1h-1zM2 3h2v1h-2zM9 3h1v1h-1zM13 3h1v1h-1zM1 4h1v1h-1zM4 4h1v1h-1zM9 4h1v1h-1zM13 4h1v1h-1zM1 5h1v1h-1zM13 5h1v1h-1zM1 6h1v1h-1zM13 6h1v1h-1zM1 7h1v1h-1zM11 7h1v1h-1zM1 8h1v1h-1zM11 8h1v1h-1zM1 9h1v1h-1zM11 9h1v1h-1zM1 10h1v1h-1zM11 10h1v1h-1zM2 11h9v1h-9z"/>
+<!-- 壶身（铜色） -->
+<path fill="#a8775e" d="M2 5h7v1h-7zM2 6h7v1h-7zM2 7h9v1h-9zM2 8h9v1h-9zM2 9h9v1h-9zM2 10h9v1h-9z"/>
+<!-- 壶身高光 -->
+<path fill="#d4a56a" d="M2 4h2v1h-2zM2 5h2v1h-2zM2 6h1v1h-1z"/>
+<!-- 壶身暗面 -->
+<path fill="#6b3e2e" d="M9 7h2v1h-2zM9 8h2v1h-2zM9 9h2v1h-2zM9 10h2v1h-2z"/>
+<!-- 壶嘴 -->
+<path fill="#94b0c2" d="M10 2h3v1h-3zM10 3h3v1h-3zM10 4h3v1h-3zM10 5h3v1h-3zM10 6h3v1h-3z"/>
+<!-- 壶嘴高光 -->
+<path fill="#f4f4f4" d="M10 1h2v1h-2z"/>
+<!-- 壶嘴孔 -->
+<path fill="#1a1c2c" d="M12 1h1v1h-1z"/>
+<!-- 把手 -->
+<path fill="#6b3e2e" d="M4 4h5v1h-5z"/>
+<!-- 魔法微光 -->
+<path fill="#f4f4f4" d="M3 6h1v1h-1z"/>
+</svg>
