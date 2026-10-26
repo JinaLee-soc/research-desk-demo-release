@@ -31,7 +31,7 @@ The tracker supplies **project state**. A literature-note wiki supplies **resear
 | Calendar | Available work blocks, meetings and deadlines from selected calendars | Find time for researcher-defined tasks, such as reading a paper or checking a figure. |
 | Literature-note wiki | Reading notes, paper summaries and topic tags | Keep reading materials organized and easy to browse. |
 | LLM-assisted wiki | Paper progress entries and task status | Record progress for each paper and review completed tasks. |
-| Personal AI assistant | Selected project state, next actions, notes and calendar availability | Explain the task priority. Suggest a first step. Propose a work record for the researcher to confirm. |
+| Personal AI assistant | Deadlines, reminder preferences and calendar access | Record deadlines from messages. Send reminders and a weekly briefing. |
 
 ### Calendar: turn a priority into a feasible work session
 
@@ -49,20 +49,22 @@ An LLM-assisted wiki could help record paper progress and update task status. Yo
 
 **In this demo:** project notes and demo research records persist locally. External literature-wiki and reading-tool actions show a demonstration notice. They do not access a personal library or retrieve sources.
 
-### Personal AI assistant: organize tasks and records
+### Personal AI assistant: record deadlines and send reminders
 
-An assistant could help with scheduling, note searches and work records.
+A messaging-based personal AI assistant could make deadline tracking part of an ordinary conversation. Send a message with the deadline and project name. With the required integrations and permissions, the assistant could automatically add the deadline to Research Desk and your calendar.
 
-For example, a researcher could ask:
+For example, you could send:
 
-- “I have 30 minutes. Which next action fits?”
-- “Which reading notes have I saved for this paper?”
-- “What still needs attention before this submission deadline?”
-- “Record that I checked Figure 2. Show the entry for confirmation.”
+- “The submission deadline is November 20 at 5 p.m. Central Time. Add it to Research Desk and my calendar.”
+- “Remind me one week before the deadline, then again the day before.”
+- “The deadline moved to November 27. Update the existing entry in both places.”
+- “Send me a briefing every Monday morning with upcoming deadlines and reminders for the week.”
 
-Each suggestion should identify its basis: a project, deadline, note or available time block. The researcher should review proposed changes before they become project records. A live assistant would require separate work on provider selection, access permissions and data handling.
+Reminders could help you notice approaching deadlines without checking the app each day. A Monday briefing could bring the week's deadlines together in one message.
 
-**In this demo:** Momo's replies and task suggestions are simulations, not model-generated advice. The confirmation flow can save a proposed activity or reminder to demo data.
+These are possible connected workflows, not built-in integrations in this release. They require a messaging connection, app and calendar write access, and scheduled notifications. The assistant would need to resolve unclear dates and time zones before adding entries. Updates should change existing entries rather than create duplicates.
+
+**In this demo:** you can track fictional deadlines in the app. Momo's replies are simulated, and confirmation can save a reminder to demo data. The demo does not receive text messages, write to a real calendar or send Monday briefings.
 
 ### Example: plan a reading session
 
