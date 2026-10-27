@@ -5,3 +5,5 @@ verification/
 Demo Data/
 *.app/
 .DS_Store
+
+web-dist/

@@ -1,5 +1,36 @@
 # Research Desk: Momo Demo
 
+[**Play in your browser — no installation**](https://JinaLee-soc.github.io/research-desk-demo-release/)
+
+The web demo uses the same interface and styloo office artwork as the Mac app.
+Try stage checklists, deadlines, project notes, work records, plans, collectible
+purchases and placement, and Momo's prepared replies. Changes stay in this
+browser's local storage. Use fictional information only. **Reset demo** restores
+the starting records. If browser storage is unavailable, changes last only for
+the current page session.
+
+The web version has no server-side account or data sync. It does not call an LLM,
+connect to a calendar, or schedule background notifications. The floating Mac
+window and launch-at-login controls are not part of the web version. Calendar
+history and initial rewards are generated examples; the browser implements the
+core stage, work-record and collectible interactions. It does not reproduce all
+native streak, seasonal reward or collection-completion calculations. Image
+exports download a PNG file.
+
+To build the Pages site locally on macOS with Python 3, Node.js and Xcode Command
+Line Tools:
+
+```sh
+python3 build-web.py
+node tests/web-demo.test.cjs
+python3 -m http.server 8000 --directory web-dist
+```
+
+Open `http://localhost:8000`. The build creates fresh toy fixtures in a temporary
+folder. It does not read the Mac app's saved records. GitHub Actions builds and
+deploys `web-dist` after a push to `codex/prepare-public-demo`. Enable **GitHub
+Actions** as the repository's Pages source when deploying a fork.
+
 Research Desk tracks papers from an idea to publication. It keeps the next action visible and links work to project notes.
 
 Research Desk combines a **paper progress tracker**, project notes, deadlines and work records. It also includes a small office and a personal assistant named **Momo**. The desk helps answer two questions: *What should I work on next? What do I need to resume that work?*
