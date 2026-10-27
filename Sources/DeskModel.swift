@@ -425,9 +425,9 @@ struct DeskDecoration {
     let name: String
     let level: Int
     static let all: [DeskDecoration] = [
-        .init(id:"plant",name:"Plant pot",level:2), .init(id:"flowers",name:"Water cooler",level:4),
-        .init(id:"poster",name:"Wall calendar",level:6), .init(id:"coffee",name:"Coffee machine",level:8),
-        .init(id:"sofa",name:"Sofa",level:10)
+        .init(id:"plant",name:"Flower vase",level:2), .init(id:"flowers",name:"Books",level:4),
+        .init(id:"poster",name:"Noticeboard",level:6), .init(id:"coffee",name:"Floor lamp",level:8),
+        .init(id:"sofa",name:"Armchair",level:10)
     ]
 }
 private struct RewardTransaction {

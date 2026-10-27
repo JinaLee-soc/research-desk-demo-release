@@ -1,0 +1,12 @@
+House Interior Asset Pack by styloo
+CC0 1.0 Universal
+
+Official source: https://styloo.itch.io/houseinteriorassetpack
+Creator license announcement (2025-02-06):
+https://styloo.itch.io/houseinteriorassetpack/devlog/882290/changed-license-to-cc0
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+This source notice was prepared for Research Desk. The archive README is
+preserved separately in styloo-README.txt. Attribution is voluntary.
+The application license does not restrict these CC0 assets.

@@ -1,0 +1,50 @@
+{
+  "styloo-living-wall.png": {
+    "source": "living/individuals files/living-wall.png",
+    "sha256": "f8b0874423b9d66a04d6ce863d767d30db3e81cc434dbe340398a01ba2905e5d"
+  },
+  "styloo-living-floor.png": {
+    "source": "living/individuals files/living-floor.png",
+    "sha256": "2ffcadaf3dc9577b5abde01e44259b4476b53db4d519412d3ea756e21447ac5c"
+  },
+  "styloo-green-curtains.png": {
+    "source": "living/individuals files/green-curtains.png",
+    "sha256": "fba2f26c1d56739dcf681ac22634b92cdf170db06ef57c992e1209748c24dc98"
+  },
+  "styloo-shelf-books.png": {
+    "source": "living/individuals files/shelf-books.png",
+    "sha256": "75a246b11519eee08e010f14d9904cadeb26ba9a6e7fb6df93b3009e064ad081"
+  },
+  "styloo-table.png": {
+    "source": "living/individuals files/table.png",
+    "sha256": "d85acf897de871293f11df8aa79352eabe3f9e731a7faf64857b80250e086584"
+  },
+  "styloo-computer.png": {
+    "source": "living/individuals files/computer.png",
+    "sha256": "c2037d387af8a6f596c195025eb164c498ddc7f5ce0243ed7991db70ef224807"
+  },
+  "styloo-chair1.png": {
+    "source": "living/individuals files/chair1.png",
+    "sha256": "896f9e0165a3566df969dc53eb1fa7f9e18daf2680d1001aaa2f8edb99d91a1c"
+  },
+  "styloo-vase_flowers.png": {
+    "source": "living/individuals files/vase_flowers.png",
+    "sha256": "38b281c18535d50ec6c9d09936be0b1a33603824632fe7869660f74af253df5d"
+  },
+  "styloo-8Books.png": {
+    "source": "living/individuals files/8Books.png",
+    "sha256": "d89351dc00e9f0bff4c93bb8423f6813438c55a57dc29811e66e8f85aedf6279"
+  },
+  "styloo-board-post-it.png": {
+    "source": "living/individuals files/board-post-it.png",
+    "sha256": "8b8fed0457c9120af0ba098078c53bcf56be91f4fa5d54eb51a874bc4656387c"
+  },
+  "styloo-lamp.png": {
+    "source": "living/individuals files/lamp.png",
+    "sha256": "df71843e0d4e5a1e780e856c1e22139766323dba4c4cc45864fe004db50c6fac"
+  },
+  "styloo-sofa.png": {
+    "source": "living/individuals files/sofa.png",
+    "sha256": "8d454e8df333f1efea49a01eb6ad0fa7e37b0e3c0e3e744ffeed4a866f7e3bb3"
+  }
+}

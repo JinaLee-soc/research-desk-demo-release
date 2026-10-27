@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bounded source/privacy checks and isolated native demo behavior tests."""
 from pathlib import Path
-import subprocess, re, hashlib
+import subprocess, re, hashlib, json
 root=Path(__file__).resolve().parents[1]
 resources=root/'Resources';sources=root/'Sources'
 for path in list(sources.glob('*.swift'))+list(resources.glob('*.js'))+[root/'fixtures.py']:
@@ -16,6 +16,9 @@ for name,expected in {
     'PixelOfficeAssets.png':'797bec77277d0e1144ed6dd536758deef6cabb84d3a0df42b6866c205c146598',
 }.items():
     assert hashlib.sha256((resources/name).read_bytes()).hexdigest()==expected, f'Changed third-party original: {name}'
+
+for name,info in json.loads((resources/'styloo-assets.json').read_text()).items():
+    assert hashlib.sha256((resources/name).read_bytes()).hexdigest()==info['sha256'], f'Changed styloo original: {name}'
 
 assert hashlib.sha256((resources/'momo-poses.png').read_bytes()).digest()==b"\x1e\x04\xcc>\x9c\xa0\xcdm\xef\xa8\x91/\xe8j\xdf\x0fX'\xa4u\xc8\xf6qa\xdd\xb5\x8a\xd1[.\x93\x8a"
 for path in resources.glob('*.js'):subprocess.run(['node','--check',str(path)],check=True)

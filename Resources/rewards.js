@@ -48,8 +48,8 @@
  const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  let selectedMonth='',inventoryOpen=false;
  document.addEventListener('toggle',e=>{if(e.target.matches?.('.decoration-drawer'))inventoryOpen=e.target.open;},true);
- const crops={plant:[169,64,16,21],flowers:[147,140,9,17],poster:[234,81,17,11],coffee:[159,91,7,11],sofa:[119,120,34,18],person:[2,104,15,24],window:[59,96,26,21],partition:[171,44,79,17],desk:[188,63,18,27],computer:[233,106,16,19],chair:[6,41,11,22],books:[184,126,24,31],wall:[84,70,26,20]};
- const crop=id=>{const [x,y,w,h]=crops[id]||crops.plant;return `<span class="pixel-crop" style="aspect-ratio:${w}/${h}"><img src="PixelOfficeAssets.png" alt="" style="width:${256/w*100}%;height:${160/h*100}%;left:${-x/w*100}%;top:${-y/h*100}%"></span>`;};
+ const officeArt={plant:'vase_flowers',flowers:'8Books',poster:'board-post-it',coffee:'lamp',sofa:'sofa',window:'green-curtains',desk:'table',computer:'computer',chair:'chair1',books:'shelf-books',wall:'living-wall',floor:'living-floor'};
+ const crop=id=>id==='person'?`<span class="pixel-crop owner-crop"><img src="PixelOfficeAssets.png" alt="" style="width:${256/15*100}%;height:${160/24*100}%;left:${-2/15*100}%;top:${-104/24*100}%"></span>`:`<img class="styloo-sprite" src="styloo-${officeArt[id]||officeArt.plant}.png" alt="" aria-hidden="true">`;
  const sprite=id=>`<span class="decoration-sprite decor-${escape(id)}" aria-hidden="true">${crop(id)}</span>`;
  function streak(p,id){const s=p.rewards?.streaks?.[id];return s?`<p class="project-streak">Streak ${s.current} days <span>· Best ${s.best} days</span></p>`:'';}
  function officeObjects(p){return (p.rewards?.decorations||[]).filter(d=>d.shown).map(d=>`<span class="office-unlock placed-${escape(d.id)}" role="img" aria-label="${escape(d.name)}">${sprite(d.id)}</span>`).join('');}

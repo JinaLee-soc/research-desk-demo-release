@@ -165,7 +165,7 @@ This script checks privacy boundaries and JavaScript syntax. It then compiles an
 
 ## Artwork
 
-Office furniture and the single owner character: [Pixel Office Asset Pack by 2dPig](https://2dpig.itch.io/pixel-office), CC0 1.0. Momo's cat artwork permits free reuse. See [ASSETS.md](ASSETS.md) for all source credits, adaptations and separate artwork permissions.
+Office and furniture: [House Interior Asset Pack by styloo](https://styloo.itch.io/houseinteriorassetpack), CC0 1.0. The single owner character comes from [Pixel Office Asset Pack by 2dPig](https://2dpig.itch.io/pixel-office), also CC0 1.0. Momo's cat artwork permits free reuse. See [ASSETS.md](ASSETS.md) for all source credits, adaptations and separate artwork permissions.
 
 ## License: noncommercial use
 
